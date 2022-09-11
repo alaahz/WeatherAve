@@ -1,0 +1,22 @@
+.CardGlassEffect{
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+
+
+}
+.Text{
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+}
+.Text1{
+    font-family: 'Tajawal';
+    color: white;
+    font-weight: bold;
+    font-size:30px
+
+}
