@@ -16,7 +16,7 @@ function City (){
     const handleSubmit =  (e) => {
       e.preventDefault()
 
-      axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=4&appid=${keyApi}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=4&appid=${keyApi}`)
       .then(function (response) {
         // handle success
         // console.log(response);
