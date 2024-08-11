@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container,Figure} from 'react-bootstrap';
-
+import { Figure, Stack} from 'react-bootstrap';
+import './footer.css'
 
 
 
@@ -8,7 +8,7 @@ import { Container,Figure} from 'react-bootstrap';
 function Footer() {
 
     return (  
-    <Container style={{textAlign:"center",marginTop:'16%'}}>         
+    <Stack className='footerContainer'>         
                  <Figure>
                     <Figure.Image
                             width={250}
@@ -17,9 +17,10 @@ function Footer() {
                             src="https://i.ibb.co/3BGZFrs/Picture1.png"/>   
                     </Figure>
            
-             <h4 style={{   fontFamily: 'Tajawal, sans-serif', color: "white"}}>Developed By Alaa Alhazmi</h4>
-     
-       </Container>
+                    <h4 className='footerLink'>Developed By   
+                        <a href="https://alaaalhazmi.netlify.app/"> Alaa Alhazmi</a>
+                    </h4>
+       </Stack>
     );
 }
 
