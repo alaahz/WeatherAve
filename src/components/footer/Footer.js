@@ -8,7 +8,7 @@ import { Container,Figure} from 'react-bootstrap';
 function Footer() {
 
     return (  
-    <Container style={{textAlign:"center",}}>         
+    <Container style={{textAlign:"center",marginTop:'16%'}}>         
                  <Figure>
                     <Figure.Image
                             width={250}

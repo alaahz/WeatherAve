@@ -1,8 +1,8 @@
 import React ,{useState} from 'react';
 import {Stack, Container,Form,FormControl,Button, Row} from 'react-bootstrap';
 import CardInfor from './CardInfo.js';
-import axios from 'axios'
-import './city.css'
+import axios from 'axios';
+import './city.css';
 
 
 function City (){
@@ -11,26 +11,20 @@ function City (){
     const [ userInput, setUserInput] = useState("")
     const [message, setMessage] = useState("Please Enter Correct City Name.")
     const [getdata, setGetDate] = useState(false)
-    const keyApi = "55313c7a7db6689b06512fdbbdaa842e"
 
     const handleSubmit =  (e) => {
       e.preventDefault()
 
-      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=4&appid=${keyApi}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=4&appid=${process.env.REACT_APP_KEY_API}`)
       .then(function (response) {
-        // handle success
-        // console.log(response);
         setGetDate(false)
         setWeather(response.data);
       })
       .catch(function (error) {
-        // handle error
-        // console.log(error);
         setGetDate(true)
         setMessage('Please enter a city name.')
       })
       .then(function () {
-        // always executed
       });
 
   }
