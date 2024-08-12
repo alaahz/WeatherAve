@@ -11,7 +11,7 @@ WeatherAve is a simple React application that allows users to search for weather
 - [Dependencies](#dependencies)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -79,7 +79,3 @@ To configure the application, ensure you have a valid OpenWeatherMap API key. Th
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to WeatherAve, please fork the repository and create a pull request with your changes. Be sure to follow the project's coding guidelines.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
